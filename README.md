@@ -1,4 +1,5 @@
-#HSE 542 Course Project (Team 7).
+#HSE542_ART_Ergonomics
+HSE 542 Course Project (Team 7).
 Authors: Hari Iyer and Harika Kolli
 
 This application helps detect joint locations, positions, and angles. This then compares the data to Assessment of Repetitive Tasks (ART) metrics to infer ergonomic risk for long-term Musculoskeletal Disorders (MSD).
