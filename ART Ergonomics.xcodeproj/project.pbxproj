@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B1FA7F38A987DF69C9DE09 /* Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB00C8C0F9E09D5E3996E6A /* Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework */; };
+		45C965CC92A6851659FF412E /* Pods_ART_ErgonomicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D54F51A7C75318ABE753046 /* Pods_ART_ErgonomicsTests.framework */; };
+		7EBB9DE429EDE00A00F21F5D /* Pods_ART_Ergonomics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BCB899C1AB128184D9ECA0 /* Pods_ART_Ergonomics.framework */; };
+		7ED863B629EDEA5700C6A002 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 7ED863B529EDEA5700C6A002 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */; };
+		7EDC9EF129EB51670030B718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9EF029EB51670030B718 /* AppDelegate.swift */; };
+		7EDC9EF329EB51670030B718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9EF229EB51670030B718 /* SceneDelegate.swift */; };
+		7EDC9EF529EB51670030B718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9EF429EB51670030B718 /* ViewController.swift */; };
+		7EDC9EF829EB51670030B718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC9EF629EB51670030B718 /* Main.storyboard */; };
+		7EDC9EFA29EB51670030B718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC9EF929EB51670030B718 /* Assets.xcassets */; };
+		7EDC9F0829EB51670030B718 /* ART_ErgonomicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9F0729EB51670030B718 /* ART_ErgonomicsTests.swift */; };
+		7EDC9F1229EB51670030B718 /* ART_ErgonomicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9F1129EB51670030B718 /* ART_ErgonomicsUITests.swift */; };
+		7EDC9F1429EB51670030B718 /* ART_ErgonomicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9F1329EB51670030B718 /* ART_ErgonomicsUITestsLaunchTests.swift */; };
+		7EDC9F2129EB6CDD0030B718 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC9F2029EB6CDD0030B718 /* CameraViewController.swift */; };
+		7EE3F51D29ECCA0600FF5E43 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3F51C29ECCA0600FF5E43 /* RecorderViewController.swift */; };
+		7EE3F52029ECD98A00FF5E43 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE3F51F29ECD98A00FF5E43 /* Photos.framework */; };
+		7EE3F52229ECE5A200FF5E43 /* AnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3F52129ECE5A200FF5E43 /* AnalyzerViewController.swift */; };
+		7EE3F52929ED065400FF5E43 /* Posenet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3F52829ED065400FF5E43 /* Posenet.mlmodel */; };
+		7EE3F53329ED1E9E00FF5E43 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE3F53229ED1E9E00FF5E43 /* Vision.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EDC9F0429EB51670030B718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDC9EE529EB51670030B718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDC9EEC29EB51670030B718;
+			remoteInfo = "ART Ergonomics";
+		};
+		7EDC9F0E29EB51670030B718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDC9EE529EB51670030B718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDC9EEC29EB51670030B718;
+			remoteInfo = "ART Ergonomics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B50504BB9299779DD03E4D /* Pods-ART ErgonomicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART ErgonomicsTests.release.xcconfig"; path = "Target Support Files/Pods-ART ErgonomicsTests/Pods-ART ErgonomicsTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D54F51A7C75318ABE753046 /* Pods_ART_ErgonomicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ART_ErgonomicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E054C6648AE035A7694DC76 /* Pods-ART Ergonomics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART Ergonomics.debug.xcconfig"; path = "Target Support Files/Pods-ART Ergonomics/Pods-ART Ergonomics.debug.xcconfig"; sourceTree = "<group>"; };
+		5AB00C8C0F9E09D5E3996E6A /* Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70169D80D973D50925DA194E /* Pods-ART Ergonomics-ART ErgonomicsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART Ergonomics-ART ErgonomicsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ART Ergonomics-ART ErgonomicsUITests/Pods-ART Ergonomics-ART ErgonomicsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED863B529EDEA5700C6A002 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite; path = ../../Downloads/posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite; sourceTree = "<group>"; };
+		7EDC9EED29EB51670030B718 /* ART Ergonomics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ART Ergonomics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC9EF029EB51670030B718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EDC9EF229EB51670030B718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7EDC9EF429EB51670030B718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EDC9EF729EB51670030B718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EDC9EF929EB51670030B718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EDC9EFE29EB51670030B718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDC9F0329EB51670030B718 /* ART ErgonomicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ART ErgonomicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC9F0729EB51670030B718 /* ART_ErgonomicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART_ErgonomicsTests.swift; sourceTree = "<group>"; };
+		7EDC9F0D29EB51670030B718 /* ART ErgonomicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ART ErgonomicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC9F1129EB51670030B718 /* ART_ErgonomicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART_ErgonomicsUITests.swift; sourceTree = "<group>"; };
+		7EDC9F1329EB51670030B718 /* ART_ErgonomicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART_ErgonomicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EDC9F2029EB6CDD0030B718 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7EE3F51C29ECCA0600FF5E43 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		7EE3F51F29ECD98A00FF5E43 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		7EE3F52129ECE5A200FF5E43 /* AnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzerViewController.swift; sourceTree = "<group>"; };
+		7EE3F52829ED065400FF5E43 /* Posenet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Posenet.mlmodel; path = ../../../Downloads/Posenet.mlmodel; sourceTree = "<group>"; };
+		7EE3F53229ED1E9E00FF5E43 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		93C44E655F55E4ABD41A20F4 /* Pods-ART Ergonomics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART Ergonomics.release.xcconfig"; path = "Target Support Files/Pods-ART Ergonomics/Pods-ART Ergonomics.release.xcconfig"; sourceTree = "<group>"; };
+		D2309E1DDBCCC8E8D4AFC8F3 /* Pods-ART ErgonomicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART ErgonomicsTests.debug.xcconfig"; path = "Target Support Files/Pods-ART ErgonomicsTests/Pods-ART ErgonomicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF54838FB538965AEECEE94 /* Pods-ART Ergonomics-ART ErgonomicsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ART Ergonomics-ART ErgonomicsUITests.release.xcconfig"; path = "Target Support Files/Pods-ART Ergonomics-ART ErgonomicsUITests/Pods-ART Ergonomics-ART ErgonomicsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3BCB899C1AB128184D9ECA0 /* Pods_ART_Ergonomics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ART_Ergonomics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EDC9EEA29EB51670030B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE3F53329ED1E9E00FF5E43 /* Vision.framework in Frameworks */,
+				7EE3F52029ECD98A00FF5E43 /* Photos.framework in Frameworks */,
+				7EBB9DE429EDE00A00F21F5D /* Pods_ART_Ergonomics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9F0029EB51670030B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C965CC92A6851659FF412E /* Pods_ART_ErgonomicsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9F0A29EB51670030B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B1FA7F38A987DF69C9DE09 /* Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EDC9EE429EB51670030B718 = {
+			isa = PBXGroup;
+			children = (
+				7ED863B529EDEA5700C6A002 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite */,
+				7EDC9EEF29EB51670030B718 /* ART Ergonomics */,
+				7EDC9F0629EB51670030B718 /* ART ErgonomicsTests */,
+				7EDC9F1029EB51670030B718 /* ART ErgonomicsUITests */,
+				7EDC9EEE29EB51670030B718 /* Products */,
+				7EE3F51E29ECD98A00FF5E43 /* Frameworks */,
+				92BE4A57CD98A85048C13E55 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7EDC9EEE29EB51670030B718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC9EED29EB51670030B718 /* ART Ergonomics.app */,
+				7EDC9F0329EB51670030B718 /* ART ErgonomicsTests.xctest */,
+				7EDC9F0D29EB51670030B718 /* ART ErgonomicsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EDC9EEF29EB51670030B718 /* ART Ergonomics */ = {
+			isa = PBXGroup;
+			children = (
+				7EE3F52129ECE5A200FF5E43 /* AnalyzerViewController.swift */,
+				7EE3F52829ED065400FF5E43 /* Posenet.mlmodel */,
+				7EDC9EF029EB51670030B718 /* AppDelegate.swift */,
+				7EDC9EF229EB51670030B718 /* SceneDelegate.swift */,
+				7EDC9EF429EB51670030B718 /* ViewController.swift */,
+				7EDC9EF629EB51670030B718 /* Main.storyboard */,
+				7EDC9EF929EB51670030B718 /* Assets.xcassets */,
+				7EDC9EFE29EB51670030B718 /* Info.plist */,
+				7EDC9F2029EB6CDD0030B718 /* CameraViewController.swift */,
+				7EE3F51C29ECCA0600FF5E43 /* RecorderViewController.swift */,
+			);
+			path = "ART Ergonomics";
+			sourceTree = "<group>";
+		};
+		7EDC9F0629EB51670030B718 /* ART ErgonomicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC9F0729EB51670030B718 /* ART_ErgonomicsTests.swift */,
+			);
+			path = "ART ErgonomicsTests";
+			sourceTree = "<group>";
+		};
+		7EDC9F1029EB51670030B718 /* ART ErgonomicsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC9F1129EB51670030B718 /* ART_ErgonomicsUITests.swift */,
+				7EDC9F1329EB51670030B718 /* ART_ErgonomicsUITestsLaunchTests.swift */,
+			);
+			path = "ART ErgonomicsUITests";
+			sourceTree = "<group>";
+		};
+		7EE3F51E29ECD98A00FF5E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EE3F53229ED1E9E00FF5E43 /* Vision.framework */,
+				7EE3F51F29ECD98A00FF5E43 /* Photos.framework */,
+				F3BCB899C1AB128184D9ECA0 /* Pods_ART_Ergonomics.framework */,
+				5AB00C8C0F9E09D5E3996E6A /* Pods_ART_Ergonomics_ART_ErgonomicsUITests.framework */,
+				2D54F51A7C75318ABE753046 /* Pods_ART_ErgonomicsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92BE4A57CD98A85048C13E55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E054C6648AE035A7694DC76 /* Pods-ART Ergonomics.debug.xcconfig */,
+				93C44E655F55E4ABD41A20F4 /* Pods-ART Ergonomics.release.xcconfig */,
+				70169D80D973D50925DA194E /* Pods-ART Ergonomics-ART ErgonomicsUITests.debug.xcconfig */,
+				DDF54838FB538965AEECEE94 /* Pods-ART Ergonomics-ART ErgonomicsUITests.release.xcconfig */,
+				D2309E1DDBCCC8E8D4AFC8F3 /* Pods-ART ErgonomicsTests.debug.xcconfig */,
+				02B50504BB9299779DD03E4D /* Pods-ART ErgonomicsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EDC9EEC29EB51670030B718 /* ART Ergonomics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDC9F1729EB51670030B718 /* Build configuration list for PBXNativeTarget "ART Ergonomics" */;
+			buildPhases = (
+				FEA03301EF73E5552A92AC5D /* [CP] Check Pods Manifest.lock */,
+				7EDC9EE929EB51670030B718 /* Sources */,
+				7EDC9EEA29EB51670030B718 /* Frameworks */,
+				7EDC9EEB29EB51670030B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ART Ergonomics";
+			productName = "ART Ergonomics";
+			productReference = 7EDC9EED29EB51670030B718 /* ART Ergonomics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EDC9F0229EB51670030B718 /* ART ErgonomicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDC9F1A29EB51670030B718 /* Build configuration list for PBXNativeTarget "ART ErgonomicsTests" */;
+			buildPhases = (
+				DB7AA575EC2B99046B6B20C2 /* [CP] Check Pods Manifest.lock */,
+				7EDC9EFF29EB51670030B718 /* Sources */,
+				7EDC9F0029EB51670030B718 /* Frameworks */,
+				7EDC9F0129EB51670030B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDC9F0529EB51670030B718 /* PBXTargetDependency */,
+			);
+			name = "ART ErgonomicsTests";
+			productName = "ART ErgonomicsTests";
+			productReference = 7EDC9F0329EB51670030B718 /* ART ErgonomicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EDC9F0C29EB51670030B718 /* ART ErgonomicsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDC9F1D29EB51670030B718 /* Build configuration list for PBXNativeTarget "ART ErgonomicsUITests" */;
+			buildPhases = (
+				3C5B1289834B13954F211AB7 /* [CP] Check Pods Manifest.lock */,
+				7EDC9F0929EB51670030B718 /* Sources */,
+				7EDC9F0A29EB51670030B718 /* Frameworks */,
+				7EDC9F0B29EB51670030B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDC9F0F29EB51670030B718 /* PBXTargetDependency */,
+			);
+			name = "ART ErgonomicsUITests";
+			productName = "ART ErgonomicsUITests";
+			productReference = 7EDC9F0D29EB51670030B718 /* ART ErgonomicsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EDC9EE529EB51670030B718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7EDC9EEC29EB51670030B718 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					7EDC9F0229EB51670030B718 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7EDC9EEC29EB51670030B718;
+					};
+					7EDC9F0C29EB51670030B718 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7EDC9EEC29EB51670030B718;
+					};
+				};
+			};
+			buildConfigurationList = 7EDC9EE829EB51670030B718 /* Build configuration list for PBXProject "ART Ergonomics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EDC9EE429EB51670030B718;
+			productRefGroup = 7EDC9EEE29EB51670030B718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EDC9EEC29EB51670030B718 /* ART Ergonomics */,
+				7EDC9F0229EB51670030B718 /* ART ErgonomicsTests */,
+				7EDC9F0C29EB51670030B718 /* ART ErgonomicsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EDC9EEB29EB51670030B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED863B629EDEA5700C6A002 /* posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite in Resources */,
+				7EDC9EFA29EB51670030B718 /* Assets.xcassets in Resources */,
+				7EDC9EF829EB51670030B718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9F0129EB51670030B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9F0B29EB51670030B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C5B1289834B13954F211AB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ART Ergonomics-ART ErgonomicsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7AA575EC2B99046B6B20C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ART ErgonomicsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA03301EF73E5552A92AC5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ART Ergonomics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EDC9EE929EB51670030B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE3F52929ED065400FF5E43 /* Posenet.mlmodel in Sources */,
+				7EDC9EF529EB51670030B718 /* ViewController.swift in Sources */,
+				7EDC9F2129EB6CDD0030B718 /* CameraViewController.swift in Sources */,
+				7EDC9EF129EB51670030B718 /* AppDelegate.swift in Sources */,
+				7EE3F51D29ECCA0600FF5E43 /* RecorderViewController.swift in Sources */,
+				7EE3F52229ECE5A200FF5E43 /* AnalyzerViewController.swift in Sources */,
+				7EDC9EF329EB51670030B718 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9EFF29EB51670030B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDC9F0829EB51670030B718 /* ART_ErgonomicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC9F0929EB51670030B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDC9F1429EB51670030B718 /* ART_ErgonomicsUITestsLaunchTests.swift in Sources */,
+				7EDC9F1229EB51670030B718 /* ART_ErgonomicsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EDC9F0529EB51670030B718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDC9EEC29EB51670030B718 /* ART Ergonomics */;
+			targetProxy = 7EDC9F0429EB51670030B718 /* PBXContainerItemProxy */;
+		};
+		7EDC9F0F29EB51670030B718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDC9EEC29EB51670030B718 /* ART Ergonomics */;
+			targetProxy = 7EDC9F0E29EB51670030B718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EDC9EF629EB51670030B718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDC9EF729EB51670030B718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EDC9F1529EB51670030B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EDC9F1629EB51670030B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EDC9F1829EB51670030B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E054C6648AE035A7694DC76 /* Pods-ART Ergonomics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ART Ergonomics/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ART Ergonomics needs access to camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ART Ergonomics needs access to microphone.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "ART Ergonomics would like to access Photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-Ergonomics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EDC9F1929EB51670030B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C44E655F55E4ABD41A20F4 /* Pods-ART Ergonomics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ART Ergonomics/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ART Ergonomics needs access to camera.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ART Ergonomics needs access to microphone.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "ART Ergonomics would like to access Photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-Ergonomics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EDC9F1B29EB51670030B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2309E1DDBCCC8E8D4AFC8F3 /* Pods-ART ErgonomicsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-ErgonomicsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ART Ergonomics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ART Ergonomics";
+			};
+			name = Debug;
+		};
+		7EDC9F1C29EB51670030B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B50504BB9299779DD03E4D /* Pods-ART ErgonomicsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-ErgonomicsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ART Ergonomics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ART Ergonomics";
+			};
+			name = Release;
+		};
+		7EDC9F1E29EB51670030B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70169D80D973D50925DA194E /* Pods-ART Ergonomics-ART ErgonomicsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-ErgonomicsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ART Ergonomics";
+			};
+			name = Debug;
+		};
+		7EDC9F1F29EB51670030B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF54838FB538965AEECEE94 /* Pods-ART Ergonomics-ART ErgonomicsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW489VAM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.ART-ErgonomicsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ART Ergonomics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EDC9EE829EB51670030B718 /* Build configuration list for PBXProject "ART Ergonomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDC9F1529EB51670030B718 /* Debug */,
+				7EDC9F1629EB51670030B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDC9F1729EB51670030B718 /* Build configuration list for PBXNativeTarget "ART Ergonomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDC9F1829EB51670030B718 /* Debug */,
+				7EDC9F1929EB51670030B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDC9F1A29EB51670030B718 /* Build configuration list for PBXNativeTarget "ART ErgonomicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDC9F1B29EB51670030B718 /* Debug */,
+				7EDC9F1C29EB51670030B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDC9F1D29EB51670030B718 /* Build configuration list for PBXNativeTarget "ART ErgonomicsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDC9F1E29EB51670030B718 /* Debug */,
+				7EDC9F1F29EB51670030B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EDC9EE529EB51670030B718 /* Project object */;
+}
